@@ -1,0 +1,35 @@
+﻿<header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Clean Blog</h1>
+                    <hr class="small">
+                    <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {{#each item in model}}
+            <div class="post-preview">
+                {{#link-to 'topic' item.id}}
+                <h2 class="post-title">
+                   {{item.topic}}
+                </h2>
+                <h3 class="post-subtitle">
+                    {{item.url}}
+                </h3>
+                {{/link-to}}
+                <p class="post-meta">This topic has {{item.noOfTutorials}} tutorials </p>
+            </div>
+            <hr>   
+            {{/each}}                    
+        </div>
+    </div>
+</div>
+<hr>

@@ -1,0 +1,33 @@
+﻿<header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>{{model.topic}}</h1>
+                    <hr class="small">
+                    <span class="subheading">{{model.url}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {{#each tutorial in model.tutorials}}
+            <div class="post-preview">                
+                <h2 class="post-title">
+                   {{tutorial.name}}
+                </h2>
+                <h3 class="post-subtitle">
+                    {{tutorial.website}}
+                </h3>              
+                <p class="post-meta">This tutorial is a/n {{tutorial.type}}</p>
+            </div>
+            <hr>   
+            {{/each}}                    
+        </div>
+    </div>
+</div>
+<hr>

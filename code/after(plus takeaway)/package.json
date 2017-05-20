@@ -1,0 +1,26 @@
+{
+  "name": "remote-data",
+  "version": "0.0.1",
+  "description": "working with remote data",
+  "main": "server.js",
+  "scripts": {
+    "start": "./server.js"
+  },
+  "author": "tshepo ntlhokoa",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-ember-templates": "^0.7.2",
+    "gulp-inject": "^4.2.0",
+    "gulp-print": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2",
+    "handlebars": "^4.0.8",
+    "wiredep": "^4.0.0"
+  }
+}
